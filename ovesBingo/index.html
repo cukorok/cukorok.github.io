@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Овес Бинго</title>
-<link rel="icon" type="image/png" href="./images/icon.png">
-<link rel="stylesheet" href="style.css">
-
+  <title>Овес Бинго</title>
+  <link rel="icon" type="image/png" href="./images/icon.png">
+  <link rel="stylesheet" href="1.css">
 </head>
 <body>
 
-<h2>Овес Бинго</h2>
+<div class="container">
+  <div class="title">Овес Бинго</div>
 
-<div class="btns">
-  <button id="refreshBtn" title="Рандомить бинго">🔄 Рандомить</button>
+  <div class="buttons">
+    <button class="refresh-button" title="Рандомить бинго">🔄 Рандомить</button>
+  </div>
+
+  <div class="board-container">
+    <div class="board">
+    </div>
+  </div>
+  <div class="description"></div>
 </div>
 
-<div id="board"></div>
-<div id="desc"></div>
-
 <script src="data.js"></script>
-<script src="script.js"></script>
+<script src="1.js"></script>
 
 </body>
 </html>

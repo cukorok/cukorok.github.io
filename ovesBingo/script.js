@@ -5,13 +5,13 @@ function saveState(itemsArr) {
   }))
   const names = itemsArr ? itemsArr.map(i => i.name) : [...cells].map(c => c.textContent)
   const savedItems = names.map(n => items.find(i => i.name === n))
-  localStorage.setItem("bingoData", JSON.stringify({ items: savedItems, states }))
+  localStorage.setItem("bingoData", JSON.stringify({items: savedItems, states}))
 }
 
 function initBingo() {
   const saved = JSON.parse(localStorage.getItem("bingoData"))
-  const board = document.getElementById("board")
-  const desc = document.getElementById("desc")
+  const board = document.querySelector(".board")
+  const desc = document.querySelector(".description")
   board.innerHTML = ""
 
   let chosenItems
@@ -37,11 +37,10 @@ function initBingo() {
       const isActive = cell.classList.contains("active")
       document.querySelectorAll(".cell").forEach(c => c.classList.remove("active"))
       if (isActive) {
-        desc.style.display = "none"
+        desc.innerHTML = ""
       } else {
         cell.classList.add("active")
         desc.innerHTML = `<b>${item.name}:</b> ${item.description}`
-        desc.style.display = "block"
       }
       saveState()
     }
@@ -59,7 +58,7 @@ function initBingo() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("refreshBtn").onclick = () => {
+  document.querySelector(".refresh-button").onclick = () => {
     localStorage.removeItem("bingoData")
     location.reload()
   }
