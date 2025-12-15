@@ -90,6 +90,35 @@ button:hover {
   -ms-user-select: none;
 }
 
+.cell-text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.2;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+}
+
+.badge-new {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #e00000;
+  color: #fff;
+  font-weight: 900;
+  font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+  padding: 2px 6px;
+  border-radius: 8px;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 3;
+}
+
 .cell:hover {
   transform: scale(1.05);
   background: linear-gradient(145deg, #ffffff, #e3e3e3);
@@ -110,6 +139,7 @@ button:hover {
   transform: translate(-50%, -50%);
   pointer-events: none;
   text-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+  z-index: 2;
 }
 
 #desc {
