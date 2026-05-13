@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://youtube.com/@cukorok"><img src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white" /></a>
-  <a href="https://twitch.tv/ccukorok"><img src="https://img.shields.io/badge/Twitch-9146FF?logo=twitch&logoColor=white" /></a>
+  <a href="https://twitch.tv/cukorok"><img src="https://img.shields.io/badge/Twitch-9146FF?logo=twitch&logoColor=white" /></a>
   <a href="https://tiktok.com/@ccukorok"><img src="https://img.shields.io/badge/TikTok-000000?logo=tiktok&logoColor=white" /></a>
   <a href="https://steamcommunity.com/id/cukorok"><img src="https://img.shields.io/badge/Steam-1b2838?logo=steam&logoColor=white" /></a>
 </p>
